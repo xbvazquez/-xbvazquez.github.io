@@ -1,0 +1,145 @@
+html {
+    display: grid;
+    background-color: #dfae8b;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    /* font-family: 'Cairo', sans-serif; */
+    font-family: 'Lato', sans-serif;
+    font-weight: lighter;
+    text-align: center;
+}
+
+
+img {
+    border: 3px solid #265b5f;
+}
+
+.container {
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 325px repeat(2, 1fr);
+    align-items: center; 
+    justify-items: center;
+    justify-content: space-evenly;
+    padding-bottom: 2em;
+}
+
+.within {
+    grid-column: 1 / span 12;
+}
+
+.header-three {
+    font-family: 'Cairo', sans-serif;
+    text-align: center;
+}
+
+
+h1 {
+    margin: 0.5%;
+    font-family: 'Cairo', sans-serif;
+    font-weight: lighter;
+    font-size: 2em;
+}
+h2 {
+    font-family: 'Lato', sans-serif;
+    font-weight: lighter;
+    font-size: 1.5em;
+ 
+}
+h3 {
+    font-family: 'Lato', sans-serif;
+    font-weight: lighter;
+    font-size: 1em;
+    color: #dfae8b;
+ 
+}
+ 
+header {
+    grid-row: 1 / 2; 
+    grid-column: 1 / span 12;
+}
+ 
+.nav {
+    grid-column: 1 / span 12;
+    grid-row: 2 / 3;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: row 1;
+    border-style: solid none solid none;
+    border-width: thin;
+    grid-gap: 20px;
+    
+}
+ 
+ 
+.nav a {
+    text-decoration: none;
+    color: black;
+    /* position: center; */
+    
+}
+ 
+.nav1 {
+    background-color: #dfae8b;
+    grid-column: 3 / span 1;
+    grid-row: 1;
+    width: 100%;
+    text-align: center;
+}
+ 
+/* .nav1:hover {
+    background-color: #F1F1F1;
+    color: #265b5f;
+    font-weight: bold;
+} */
+ 
+.nav2 {
+    background-color: #dfae8b;
+    grid-column: 4 / span 1;
+    grid-row: 1;
+    width: 100%;
+    text-align: center;
+    
+}
+a:hover {
+    color: #265b5f;
+    font-weight: bold;
+}
+ 
+footer {
+    box-sizing: border-box;
+    margin-top: 5%;
+    display: grid;
+    background-color: #4F4D4E;
+    padding-top: 10px;
+    grid-row: span ;
+    
+}
+footer a {
+    text-decoration: none;
+}
+ 
+.b1 span h3:hover {
+    /* background: white; */
+    /* color: #265b5f; */
+    font-weight:bold;
+    
+}
+ 
+
+
+@media only screen and (max-width: 790px) {
+    h1 {
+        font-family: 'Cairo', sans-serif;
+        font-weight: lighter;
+        font-size: 1.5em;
+    }
+    .container {
+        display: grid;
+        grid-template-rows: repeat(auto-fill, minmax(350px, 6fr));
+        justify-content: space-between;
+    }
+
+}
